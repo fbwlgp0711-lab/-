@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F9F7F4;
+  --foreground: #374151;
+  --primary: #0D1B3E;
+  --accent: #B8975A;
+  
+  /* ArchiValue Color System */
+  --av-navy: #0D1B3E;
+  --av-gold: #B8975A;
+  --av-white: #F9F7F4;
+  --av-text: #374151;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0D1B3E;
+    --foreground: #F9F7F4;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-noto-sans), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-noto-serif), serif;
+  color: var(--primary);
+}
